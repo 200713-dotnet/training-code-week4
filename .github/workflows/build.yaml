@@ -16,6 +16,7 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2.3.1
+      - run: git fetch --unshallow
       - run: dotnet tool install --global dotnet-sonarscanner
       - run: | # multiline value with each line ending with a newline character \n
           dotnet sonarscanner begin -o:'200713-dotnet' -k:'200713-dotnet_training-code-week4' -d:sonar.login='3fa8402a38e8ea4d47b0aa02b95ac86aa4e16cca' -d:sonar.host.url='https://sonarcloud.io/'
