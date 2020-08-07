@@ -2,9 +2,9 @@
 <CoverageSession>
   <Summary numSequencePoints="67" visitedSequencePoints="6" numBranchPoints="26" visitedBranchPoints="0" sequenceCoverage="8.95" branchCoverage="0" maxCyclomaticComplexity="23" minCyclomaticComplexity="17" visitedClasses="1" numClasses="10" visitedMethods="2" numMethods="19" />
   <Modules>
-    <Module hash="51828EEF-44E6-481C-8027-F4CA4AF35BC9">
+    <Module hash="BC838482-5BCB-4A34-B7FF-BE005E102F55">
       <ModulePath>DevopsCI.Client.dll</ModulePath>
-      <ModuleTime>2020-08-07T03:03:22</ModuleTime>
+      <ModuleTime>2020-08-07T03:35:26</ModuleTime>
       <ModuleName>DevopsCI.Client</ModuleName>
       <Files>
         <File uid="1" fullPath="/home/fred/2007_13_dotnet/week_4/DevopsCI.Client/Program.cs" />
@@ -231,9 +231,9 @@
         </Class>
       </Classes>
     </Module>
-    <Module hash="30C6AB01-6F03-4276-8F7E-1C42DEA2F8FC">
+    <Module hash="D81AA547-A80B-4342-90EC-806C0433557E">
       <ModulePath>DevopsCI.Client.Views.dll</ModulePath>
-      <ModuleTime>2020-08-07T03:03:22</ModuleTime>
+      <ModuleTime>2020-08-07T03:35:26</ModuleTime>
       <ModuleName>DevopsCI.Client.Views</ModuleName>
       <Files>
         <File uid="5" fullPath="/home/fred/2007_13_dotnet/week_4/DevopsCI.Client/Views/Home/Index.cshtml" />
