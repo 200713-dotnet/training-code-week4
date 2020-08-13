@@ -26,7 +26,20 @@ jobs:
         env: 
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-  # package:
+  package:
+    env:
+      DOCKER_LOGIN: ${{ secrets.DOCKER_LOGIN }}
+      DOCKER_TOKEN: ${{ secrets.DOCKER_TOKEN }}
+    needs: [analyze]
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2.3.1
+      - run: echo ${DOCKER_TOKEN} | docker login --username ${DOCKER_LOGIN} --password-stdin
+      - run: docker image build -f dockerfile -t devopsci .
+      - run: docker image tag devopsci fredbelotte/devopsci
+      - run: docker image push fredbelotte/devopsci
+      - run: docker logout
+
   # deploy:
 
 name: cibuild
